@@ -60,7 +60,7 @@ native-rust/
 
 ### 1. **Clone the Repository**
 ```sh
-git clone https://github.com/your-username/solana-native-rust-counter.git
+git clone https://github.com/18bharathkumar/solana-native-rust-counter
 cd solana-native-rust-counter
 ```
 
@@ -68,7 +68,7 @@ cd solana-native-rust-counter
 - Navigate to `program/` and build/deploy using Solana CLI:
 ```sh
 cd program
-cargo build-bpf
+cargo build-sbf
 # Deploy to devnet or localnet
 solana program deploy ./target/deploy/native_rust.so
 ```
