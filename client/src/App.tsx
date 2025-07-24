@@ -231,7 +231,7 @@ const App: React.FC = () => {
               <div className="mt-1 w-full">
                 <span className="font-semibold text-gray-600">📜 Latest Txns:</span>
                 <ul className="list-disc ml-6">
-                  {latestTxns.map((sig, i) => (
+                  {latestTxns.map((sig) => (
                     <li key={sig} className="font-mono text-indigo-600 hover:underline">
                       <a href={`${SOL_EXPLORER}/tx/${sig}?cluster=devnet`} target="_blank" rel="noopener noreferrer">
                         {sig.slice(0, 8)}...{sig.slice(-8)}
