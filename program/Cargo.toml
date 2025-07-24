@@ -1,0 +1,17 @@
+[package]
+name = "native-rust"
+version = "0.1.0"
+edition = "2021"  # use 2021 instead of 2024 — only 2015, 2018, 2021 are valid
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[dependencies]
+borsh = "1.5.7"
+borsh-derive = "1.5.7"
+solana-program = "2.3.0"
+
+[profile.release]
+overflow-checks = true  # recommended for security
+opt-level = "z"          # optimize for size
+lto = true               # link-time optimization
